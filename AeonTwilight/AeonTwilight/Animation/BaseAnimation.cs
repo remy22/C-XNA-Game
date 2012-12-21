@@ -53,6 +53,7 @@ namespace AeonTwilight.Animation
         /// <param name="gameTime"></param>
         public void animate(GameTime gameTime)
         {
+            timeSinceLastFrame += gameTime.ElapsedGameTime.Milliseconds;
             if (timeSinceLastFrame > millisecondsPerFrame)
             {
                 timeSinceLastFrame = 0;
