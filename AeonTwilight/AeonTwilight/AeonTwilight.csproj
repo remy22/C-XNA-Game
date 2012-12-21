@@ -75,7 +75,6 @@
     <Compile Include="Animation\BaseAnimation.cs" />
     <Compile Include="Entity\GameEntity.cs" />
     <Compile Include="Entity\EntityManager.cs" />
-    <Compile Include="Input\InputManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
@@ -88,9 +87,18 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\RPGLibrary\XRpgLib.csproj">
+      <Project>{4B038994-BE56-429F-A562-080FEE6F277C}</Project>
+      <Name>XRpgLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RpgLib\RpgLib.csproj">
+      <Project>{73E5248E-7170-4F8F-AB94-54DA9A060AFC}</Project>
+      <Name>RpgLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AeonTwilightContent\AeonTwilightContent.contentproj">
-      <Name>AeonTwilightContent</Name>
+      <Name>AeonTwilightContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{1FFEAD07-F18C-4E18-A299-EDEEBCF2A98D}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

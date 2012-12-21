@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using AeonTwilight.Sound;
+using XRpgLib;
 
 namespace AeonTwilight
 {
@@ -22,8 +23,11 @@ namespace AeonTwilight
 
         public Game1()
         {
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            Components.Add(new InputManager(this));
         }
 
         /// <summary>
@@ -35,6 +39,7 @@ namespace AeonTwilight
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            this.IsMouseVisible = true;
 
             base.Initialize();
         }
