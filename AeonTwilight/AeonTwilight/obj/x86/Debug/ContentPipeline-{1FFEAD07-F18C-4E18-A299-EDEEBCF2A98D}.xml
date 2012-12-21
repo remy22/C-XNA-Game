@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{1FFEAD07-F18C-4E18-A299-EDEEBCF2A98D}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilightContent\</RootDirectory>
+      <LoggerRootDirectory>c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-12-15T11:12:20.2312548-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

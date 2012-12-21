@@ -1,0 +1,6 @@
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\AeonTwilight.exe
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\AeonTwilight.pdb
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\obj\x86\Debug\AeonTwilight.csprojResolveAssemblyReference.cache
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\obj\x86\Debug\AeonTwilight.exe
+c:\users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\obj\x86\Debug\AeonTwilight.pdb
