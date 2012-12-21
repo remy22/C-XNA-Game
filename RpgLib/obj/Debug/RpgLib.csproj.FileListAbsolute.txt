@@ -2,3 +2,4 @@ C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\RpgLib\bin
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\RpgLib\bin\Debug\RpgLib.pdb
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\RpgLib\obj\Debug\RpgLib.dll
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\RpgLib\obj\Debug\RpgLib.pdb
+C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\RpgLib\obj\Debug\RpgLib.csprojResolveAssemblyReference.cache
