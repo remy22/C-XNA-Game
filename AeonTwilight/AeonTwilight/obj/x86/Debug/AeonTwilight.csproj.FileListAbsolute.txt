@@ -8,3 +8,4 @@ C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilig
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\XRpgLib.dll
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\XRpgLib.pdb
 C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\RpgLib.pdb
+C:\Users\brand_000\documents\visual studio 2010\Projects\AeonTwilight\AeonTwilight\AeonTwilight\bin\x86\Debug\Content\Audio\Theme2.xnb

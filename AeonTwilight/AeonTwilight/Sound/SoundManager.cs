@@ -44,7 +44,7 @@ namespace AeonTwilight.Sound
         /// </summary>
         public void loadSound(ContentManager content, string name)
         {
-            sounds.Add(name, content.Load<SoundEffect>(@"Audio"+name));
+            sounds.Add(name, content.Load<SoundEffect>(@"Audio/"+name));
         }
 
         /// <summary>

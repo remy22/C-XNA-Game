@@ -56,7 +56,8 @@ namespace AeonTwilight
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Load game sounds using soundManager
-            
+            soundManager.loadSound(this.Content, "Theme2");
+            soundManager.playSound("Theme2");
         }
 
         /// <summary>
