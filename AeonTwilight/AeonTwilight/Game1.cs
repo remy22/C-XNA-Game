@@ -20,13 +20,15 @@ namespace AeonTwilight
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SoundManager soundManager;
+        
 
         public Game1()
         {
 
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
+            soundManager = SoundManager.getInstance();
             Components.Add(new InputManager(this));
         }
 
@@ -53,8 +55,8 @@ namespace AeonTwilight
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // Load game sound manager
-            SoundManager.getInstance(this.Content);
+            // Load game sounds using soundManager
+            
         }
 
         /// <summary>

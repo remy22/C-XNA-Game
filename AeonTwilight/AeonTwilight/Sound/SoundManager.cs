@@ -15,7 +15,7 @@ namespace AeonTwilight.Sound
         /// Create singleton class
         /// </summary>
         /// 
-        public static SoundManager soundManager;
+        private static SoundManager soundManager;
         public static Dictionary<string, SoundEffect> sounds;
         private SoundManager()
         {
@@ -26,22 +26,23 @@ namespace AeonTwilight.Sound
         /// <summary>
         /// return only the current working instance of the class
         /// </summary>
-        public static void getInstance(ContentManager content)
+        public static SoundManager getInstance()
         {
             if (soundManager != null)
             {
-                return;
+                return soundManager;
             }
             else
             {
                 soundManager = new SoundManager();
+                return soundManager;
             }
         }
 
         /// <summary>
         /// Load a sound into the list of sounds available
         /// </summary>
-        public static void loadSound(ContentManager content, string name)
+        public void loadSound(ContentManager content, string name)
         {
             sounds.Add(name, content.Load<SoundEffect>(@"Audio"+name));
         }
@@ -49,7 +50,7 @@ namespace AeonTwilight.Sound
         /// <summary>
         /// play a sound in the list of available sounds
         /// </summary>
-        public static void playSound(string soundName)
+        public void playSound(string soundName)
         {
             try
             {
