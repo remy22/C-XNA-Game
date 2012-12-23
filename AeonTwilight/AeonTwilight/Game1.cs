@@ -30,6 +30,7 @@ namespace AeonTwilight
             Content.RootDirectory = "Content";
             soundManager = SoundManager.getInstance();
             Components.Add(new InputManager(this));
+            Components.Add(new GameStateManager(this));
         }
 
         /// <summary>

@@ -46,8 +46,6 @@ namespace XRpgLib
         /// </summary>
         public override void Initialize()
         {
-            // TODO: Add your initialization code here
-
             base.Initialize();
         }
 
@@ -57,7 +55,49 @@ namespace XRpgLib
         /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
+            DrawableGameComponent drawComponent;
+            foreach (GameComponent component in gameComponents)
+            {
+                if (component is DrawableGameComponent)
+                {
+                    drawComponent = component as DrawableGameComponent;
+                    if (drawComponent.Visible)
+                        drawComponent.Draw(gameTime);
+                }
+            }
+
             base.Draw(gameTime);
+        }
+
+        internal protected virtual void StateChange(object sender, EventArgs e)
+        {
+            if (StateManager.CurrentState == Id)
+                Show();
+            else
+                Hide();
+        }
+
+        protected virtual void Show()
+        {
+            Visible = true;
+            Enabled = true;
+            foreach (GameComponent component in gameComponents)
+            {
+                component.Enabled = true;
+                if (component is DrawableGameComponent)
+                    ((DrawableGameComponent)component).Visible = true;
+            }
+        }
+
+        protected virtual void Hide()
+        {
+            Visible = false;
+            Enabled = false;
+            foreach (GameComponent component in gameComponents)
+            {
+                component.Enabled = false;
+                if (component is DrawableGameComponent) ((DrawableGameComponent)component).Visible = false;
+            }
         }
         /// <summary>
         /// Allows the game component to update itself.

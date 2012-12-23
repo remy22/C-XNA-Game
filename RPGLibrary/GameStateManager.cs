@@ -17,10 +17,23 @@ namespace XRpgLib
     /// </summary>
     public class GameStateManager : GameComponent
     {
+        public event EventHandler OnStateChange;
+
+        Stack<GameState> gameStates = new Stack<GameState>();
+
+        const int startDrawOrder = 5000;
+        const int drawOrderInc = 100;
+        int drawOrder;
+
+        public GameState CurrentState
+        {
+            get { return gameStates.Peek(); }
+        }
+
         public GameStateManager(Game game)
             : base(game)
         {
-            // TODO: Construct any child components here
+            drawOrder = startDrawOrder;
         }
 
         /// <summary>
@@ -29,8 +42,6 @@ namespace XRpgLib
         /// </summary>
         public override void Initialize()
         {
-            // TODO: Add your initialization code here
-
             base.Initialize();
         }
 
@@ -43,6 +54,43 @@ namespace XRpgLib
             // TODO: Add your update code here
 
             base.Update(gameTime);
+        }
+
+        public void PopState()
+        {
+            if (gameStates.Count > 0)
+            {
+                RemoveState();
+                drawOrder -= drawOrderInc;
+
+                if (OnStateChange != null)
+                    OnStateChange(this, null);
+            }
+        }
+        private void RemoveState()
+        {
+            GameState State = gameStates.Peek();
+            OnStateChange -= State.StateChange;
+
+        }
+
+        private void AddState(GameState newState)
+        {
+            gameStates.Push(newState);
+            Game.Components.Add(newState);
+            OnStateChange += newState.StateChange;
+        }
+        public void ChangeState(GameState newState)
+        {
+            while (gameStates.Count > 0)
+                RemoveState();
+
+            newState.DrawOrder = startDrawOrder;
+            drawOrder = startDrawOrder;
+            AddState(newState);
+
+            if (OnStateChange != null)
+                OnStateChange(this, null);
         }
     }
 }
